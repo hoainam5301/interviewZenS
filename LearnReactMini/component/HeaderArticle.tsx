@@ -6,22 +6,28 @@ const HeadersArticle = () => (
     <View style={styles.section}>
       <View style={{flexDirection: 'row', marginLeft: 12}}>
         <Image
-          source={require('../assets/HN.png')}
+          source={require('../assets/logo.png')}
           style={styles.image}
           resizeMode="contain"
         />
       </View>
-      <View style={{flexDirection: 'row', marginRight: 12}}>
+      <View
+        style={{
+          flexDirection: 'row',
+          marginRight: 12,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
         <View
           style={{
-            marginRight: 12,
+            marginRight: 6,
             justifyContent: 'flex-end',
           }}>
-          <Text style={{color: 'gray'}}>johndoe@example.com</Text>
-          <Text style={{textAlign: 'right'}}>Paul</Text>
+          <Text style={{color: 'gray', fontSize: 10}}>Handicrafted by</Text>
+          <Text style={{textAlign: 'right', fontSize: 12}}>Jim HLS</Text>
         </View>
         <Image
-          source={require('../assets/image2.png')}
+          source={require('../assets/daidien.png')}
           style={styles.image}
           resizeMode="contain"
         />
@@ -29,18 +35,16 @@ const HeadersArticle = () => (
     </View>
     <View
       style={{
-        height: 120,
-        backgroundColor: '#03C988',
-        marginHorizontal: 6,
+        height: 130,
+        backgroundColor: '#29B363',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 6,
-        marginTop: 24,
+        marginTop: 12,
       }}>
-      <Text style={{color: 'white', marginBottom: 12, fontSize: 20}}>
+      <Text style={{color: 'white', marginBottom: 12, fontSize: 18}}>
         A joke a day keeps the doctor away
       </Text>
-      <Text style={{color: 'white'}}>
+      <Text style={{color: 'white', marginTop: 16, fontSize: 12}}>
         If you joke wrong way, your teeth have to pay. (Serious)
       </Text>
     </View>
@@ -54,8 +58,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   image: {
-    height: 32,
-    width: 32,
+    height: 44,
+    width: 44,
     borderRadius: 24,
   },
 });
