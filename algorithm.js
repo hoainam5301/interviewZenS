@@ -32,3 +32,4 @@ for (let i = 0; i < n; i++) {
 }
 console.log(sumMax);
 console.log(sumMin);
+consolelo.log(123123123);
